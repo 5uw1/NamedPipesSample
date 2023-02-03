@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="trayicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.Pipes" Version="2.0.45" />
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NamedPipesSample.Common\NamedPipesSample.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="trayicon.ico" />
+  </ItemGroup>
+
+</Project>
